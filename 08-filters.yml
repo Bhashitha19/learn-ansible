@@ -5,6 +5,6 @@
       ansible.builtin.shell: uptime
       register: OUT
 
-    - name: Print No of users Logged in
+    - name: Print No Of Users Logged In
       ansible.builtin.debug:
         msg: "{{ OUT.stdout | split',' }}"
